@@ -29,7 +29,7 @@ export function PageHeader() {
           </div>
 
 
-          <div className="relative w-80">
+          <div className="relative w-[577px]">
             <Input
               placeholder="Search for products..."
               className="pl-10"

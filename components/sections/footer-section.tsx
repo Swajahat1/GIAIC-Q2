@@ -105,28 +105,34 @@ const FooterSection: React.FC = () => {
           </p>
 
           {/* Payment Icons */}
-          <div className="flex mt-6 md:mt-0 space-x-4"> 
-            <img height={46.61} width={30.03}
-            src="/images/products/Visa.png"
-              alt="Visa"
-              className="h-6"
-            />
-            <img height={46.61} width={30.03}
-              src="/images/products/papyal.png"
-              alt="PayPal"
-              className="h-6"
-            />
-            <img height={46.61} width={30.03}
-              src="/images/products/apple.png"
-              alt="Apple Pay"
-              className="h-6"
-            />
-            <img height={46.61} width={30.03}
-              src="/images/products/gpay.png"
-              alt="Google Pay"
-              className="h-6"
-            />
-          </div>
+          <div className="flex mt-6 md:mt-0 space-x-4">
+  <img
+    src="/images/products/badge-1.png"
+    alt="Visa"
+    className="w-[46.61px] h-[30.03px] rounded-tl-[5.38px] border-[0.22px] border-transparent opacity-100"
+  />
+  <img
+    src="/images/products/badge.png"
+    alt="Google Pay"
+    className="w-[46.61px] h-[30.03px]  rounded-tl-[5.38px] border-[0.22px] border-transparent opacity-100"
+  />
+  <img
+    src="/images/products/papyal.png"
+    alt="PayPal"
+    className="w-[46.61px] h-[30.03px]  rounded-tl-[5.38px] border-[0.22px] border-transparent opacity-100"
+  />
+  <img
+    src="/images/products/badge-2.png"
+    alt="Apple Pay"
+    className="w-[46.61px] h-[30.03px] rounded-tl-[5.38px] border-[0.22px] border-transparent opacity-100"
+  />
+  <img
+    src="/images/products/gpay.png"
+    alt="Google Pay"
+    className="w-[46.61px] h-[30.03px]  rounded-tl-[5.38px] border-[0.22px] border-transparent opacity-100"
+  />
+</div>
+
         </div>
       </div>
     </footer>

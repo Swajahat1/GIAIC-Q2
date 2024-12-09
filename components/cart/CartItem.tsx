@@ -1,6 +1,6 @@
 "use client";
 
-import { Minus, Plus, X } from "lucide-react";
+import { Minus, Plus, Trash2, X } from "lucide-react";
 import Image from "next/image";
 import { CartItemType } from "@/lib/types";
 
@@ -26,12 +26,21 @@ export function CartItem({ item, onUpdateQuantity, onRemove }: CartItemProps) {
       <div className="flex flex-1 flex-col">
         <div className="flex justify-between text-base font-medium text-gray-900">
           <h3>{item.name}</h3>
-          <p className="ml-4">${item.price}</p>
+          <button
+            onClick={() => onRemove(item.id)}
+            className="text-gray-500 hover:text-gray-700"
+          >
+            <Trash2 className="h-5 w-5" />
+          </button>
         </div>
         <p className="mt-1 text-sm text-gray-500">Size: {item.size}</p>
         <p className="mt-1 text-sm text-gray-500">Color: {item.color}</p>
 
         <div className="flex items-center justify-between mt-4">
+          
+        <p className="ml-4">${item.price}</p>
+          
+
           <div className="flex items-center border rounded-md">
             <button
               onClick={() => onUpdateQuantity(item.id, item.quantity - 1)}
@@ -47,13 +56,6 @@ export function CartItem({ item, onUpdateQuantity, onRemove }: CartItemProps) {
               <Plus className="h-4 w-4" />
             </button>
           </div>
-
-          <button
-            onClick={() => onRemove(item.id)}
-            className="text-gray-500 hover:text-gray-700"
-          >
-            <X className="h-5 w-5" />
-          </button>
         </div>
       </div>
     </div>
